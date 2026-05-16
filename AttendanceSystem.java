@@ -45,7 +45,7 @@ public class AttendanceSystem {
         list.get(2).recordAttendance(60);
 
         System.out.println("=== 月次給与レポート ===");
-        System.out.println("-------------------------");
+        System.out.println("---------------------");
         for (Employee e : list) {
             System.out.printf("ID: %s | 氏名: %s | 支給額: %,.0f円%n", e.getId(), e.getName(), e.calculateSalary());
         }
