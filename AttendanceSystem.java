@@ -38,7 +38,7 @@ public class AttendanceSystem {
         List<Employee> list = new ArrayList<>();
         list.add(new FullTimeEmployee("EMP-01", "山田太郎", 300000));
         list.add(new PartTimeEmployee("EMP-02", "鈴木花子", 1200));
-        list.add(new PartTimeEmployee("EMP-03", "佐藤健", 1000));
+        list.add(new PartTimeEmployee("EMP-03", "佐藤健", 1100));
         
         list.get(0).recordAttendance(170); // 160時間 + 残業10時間
         list.get(1).recordAttendance(85);
