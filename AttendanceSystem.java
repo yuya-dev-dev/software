@@ -38,11 +38,14 @@ public class AttendanceSystem {
         List<Employee> list = new ArrayList<>();
         list.add(new FullTimeEmployee("EMP-01", "山田太郎", 300000));
         list.add(new PartTimeEmployee("EMP-02", "鈴木花子", 1200));
-
+        list.add(new PartTimeEmployee("EMP-03", "佐藤健", 1000));
+        
         list.get(0).recordAttendance(170); // 160時間 + 残業10時間
         list.get(1).recordAttendance(85);
+        list.get(2).recordAttendance(60);
 
         System.out.println("=== 月次給与レポート ===");
+        System.out.println("-------------------------");
         for (Employee e : list) {
             System.out.printf("ID: %s | 氏名: %s | 支給額: %,.0f円%n", e.getId(), e.getName(), e.calculateSalary());
         }
