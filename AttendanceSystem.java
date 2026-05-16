@@ -49,5 +49,5 @@ public class AttendanceSystem {
         for (Employee e : list) {
             System.out.printf("ID: %s | 氏名: %s | 支給額: %,.0f円%n", e.getId(), e.getName(), e.calculateSalary());
         }
-    }
+System.out.println("システムの処理を終了します。");    }
 }
